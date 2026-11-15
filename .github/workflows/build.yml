@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Ekstrak ZIP
-        run: unzip -q kaizanworld-apk-project.zip -d proyek
+        run: unzip -q ./*.zip -d proyek
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
